@@ -1,7 +1,8 @@
 import "./App.css";
 import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
-import Skills from "./Skills";
+import SkillsList from "./SkillsList";
+import skills from "./Skills";
 
 function App() {
   return (
@@ -13,12 +14,7 @@ function App() {
       </header>
       <main>
         <AboutMe />
-        <Skills
-          skillsFront={["placeholder", "placeholder"]}
-          skillsBack={["placeholder", "placeholder"]}
-          skillsTools={["placeholder", "placeholder"]}
-          skillsTesting={["placeholder", "placeholder"]}
-        />
+        <SkillsList skills={skills} />
       </main>
     </div>
   );
