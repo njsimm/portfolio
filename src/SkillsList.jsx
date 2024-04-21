@@ -3,8 +3,8 @@ import "./SkillsList.css";
 
 const SkillList = ({ skills }) => {
   return (
-    <section className="SkillList">
-      <header className="SkillList-header">
+    <section className="SkillsList">
+      <header className="SkillsList-header">
         <h2>Technical Skills</h2>
       </header>
 
