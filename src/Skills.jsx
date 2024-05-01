@@ -1,15 +1,23 @@
 const skills = [
   {
     type: "Front-end",
-    skills: ["HTML", "CSS", "JavaScript", "React"],
+    skills: ["HTML", "CSS", "JavaScript", "React", "jQuery", "Bootstrap"],
   },
   {
     type: "Back-end",
-    skills: ["Python"],
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Python",
+      "Flask",
+      "PostgreSQL",
+      "SQL",
+      "SQLAlchemy",
+    ],
   },
   {
     type: "Tools",
-    skills: ["PlaceHolder Tool"],
+    skills: ["Bcrypt", "Git", "GitHub"],
   },
   {
     type: "Testing",
