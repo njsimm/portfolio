@@ -1,7 +1,8 @@
 import React from "react";
 import "./SkillsList.css";
+import skills from "./Skills";
 
-const SkillList = ({ skills }) => {
+const SkillList = () => {
   return (
     <section className="SkillsList">
       <header className="SkillsList-header">

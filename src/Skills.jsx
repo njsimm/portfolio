@@ -17,7 +17,7 @@ const skills = [
   },
   {
     type: "Tools",
-    skills: ["Bcrypt", "Git", "GitHub"],
+    skills: ["Bcrypt", "Git", "GitHub", "Axios"],
   },
   {
     type: "Testing",

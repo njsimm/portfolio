@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
 import SkillsList from "./SkillsList";
-import skills from "./Skills";
+import ProjectsList from "./ProjectsList";
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
       </header>
       <main>
         <AboutMe />
-        <SkillsList skills={skills} />
+        <SkillsList />
+        <ProjectsList />
       </main>
     </div>
   );
