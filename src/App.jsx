@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
 import SkillsList from "./SkillsList";
 import ProjectsList from "./ProjectsList";
+import Box from "@mui/material/Box";
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
         />
       </header>
       <main>
-        <AboutMe />
-        <SkillsList />
-        <ProjectsList />
+        <Box sx={{ mt: 8 }}>
+          <AboutMe />
+          <SkillsList />
+          <ProjectsList />
+        </Box>
       </main>
     </div>
   );
