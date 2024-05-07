@@ -9,9 +9,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Navbar
-          links={["About Me", "Skills", "Projects", "Education", "Contact"]}
-        />
+        <Navbar links={["About Me", "Skills", "Projects", "Contact"]} />
       </header>
       <main>
         <Box sx={{ mt: 8 }}>
