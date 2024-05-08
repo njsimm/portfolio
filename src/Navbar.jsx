@@ -37,7 +37,7 @@ const Navbar = ({ window, links }) => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-64}
+            offset={-80}
             key={item}
             onClick={handleDrawerToggle}
           >
@@ -87,7 +87,7 @@ const Navbar = ({ window, links }) => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-64}
+                offset={-80}
               >
                 <Button sx={{ color: "#000000", mx: 3, px: 2 }}>{item}</Button>
               </Link>

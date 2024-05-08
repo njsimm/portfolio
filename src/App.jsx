@@ -12,7 +12,7 @@ function App() {
         <Navbar links={["About Me", "Skills", "Projects", "Contact"]} />
       </header>
       <main>
-        <Box sx={{ mt: 8 }}>
+        <Box sx={{ mt: 10 }}>
           <AboutMe />
           <SkillsList />
           <ProjectsList />

@@ -20,7 +20,7 @@ const skills = [
     skills: ["Bcrypt", "Git", "GitHub", "Axios", "Material-UI"],
   },
   {
-    type: "Testing",
+    type: "Testing Frameworks",
     skills: ["Jest", "Jasmine"],
   },
 ];

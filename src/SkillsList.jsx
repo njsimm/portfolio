@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 import skills from "./Skills";
 
 const SkillList = () => {
@@ -21,9 +22,9 @@ const SkillList = () => {
           {skills.map((skillObj) => {
             return (
               <Grid item xs={12} sm={6} md={3} key={skillObj.type}>
-                <Box
+                <Paper
+                  elevation={5}
                   sx={{
-                    border: 1,
                     padding: 0,
                     borderRadius: "16px",
                     height: "100%",
@@ -63,7 +64,7 @@ const SkillList = () => {
                       );
                     })}
                   </ul>
-                </Box>
+                </Paper>
               </Grid>
             );
           })}
