@@ -5,7 +5,7 @@ import picture from "./assets/pic-port.png";
 const AboutMe = () => {
   return (
     <section id="AboutMe" className="AboutMe">
-      <Box sx={{ flexGrow: 1, margin: 3, mx: 15 }}>
+      <Box sx={{ flexGrow: 1, margin: 3, mx: 15, marginTop: 20 }}>
         <Grid container spacing={6}>
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <img
@@ -14,7 +14,8 @@ const AboutMe = () => {
               style={{
                 width: "100%",
                 height: "auto",
-                borderRadius: "10px",
+                borderRadius: "16px",
+                boxShadow: "0px 6px 10px rgba(0, 0, 0, 0.3)",
               }}
             />
           </Grid>
@@ -34,26 +35,29 @@ const AboutMe = () => {
               Software Engineer | Full Stack Developer
             </Typography>
             <Divider />
-            <Typography variant="body1" paragraph marginTop=".5rem">
-              Hello, my name is Nick! I am a full stack developer with
-              experience using the JavaScript and Python programming languages,
-              RDBMSystems such as PostgreSQL, and the technologies in their
-              respective ecosystems. My time in software engineering has
-              provided me with experience in working hands-on with existing
-              codebases, refactoring legacy code to new modern standards,
-              developing and implementing new features, creating and maintaining
-              RESTful APIs, developing database schemas, writing unit tests and
-              integration tests, and debugging.
+            <Typography variant="body1" paragraph marginTop="1rem">
+              I am a full stack developer with experience using the JavaScript
+              and Python programming languages, RDBMSystems such as PostgreSQL,
+              and the technologies in their respective ecosystems.
             </Typography>
             <Typography variant="body1" paragraph>
-              I genuinely enjoy learning new technologies and am always looking
-              for ways to improve my skills. As someone who worked as a physical
-              therapist prior to transitioning into software engineering, I
-              bring a unique perspective to team collaboration and
-              interprofessional communication. This has allowed me to work
+              My time in software engineering has provided me with experience in
+              refactoring existing codebases to new modern standards, developing
+              and implementing new features, creating and maintaining RESTful
+              APIs, developing database schemas, writing unit tests and
+              integration tests, and debugging.{" "}
+            </Typography>
+            <Typography variant="body1" paragraph>
+              As someone who worked as a physical therapist prior to
+              transitioning into software engineering, I bring a unique
+              perspective to team collaboration and interprofessional
+              communication.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              My prior experiences enable me to excel in both working
               effectively with team members from various backgrounds and
-              disciplines, and to communicate effectively with stakeholders to
-              ensure that the outcome meets the needs of the client.
+              disciplines, as well as communicate effectively with stakeholders
+              to ensure that the outcome meets the needs of the client.
             </Typography>
           </Grid>
         </Grid>

@@ -1,18 +1,21 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+import {
+  AppBar,
+  Typography,
+  Divider,
+  Box,
+  CssBaseline,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  MenuIcon,
+  Toolbar,
+  Button,
+} from "@mui/material";
+
 import { Link } from "react-scroll";
 
 const drawerWidth = 240;
@@ -37,7 +40,7 @@ const Navbar = ({ window, links }) => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-80}
+            offset={-45}
             key={item}
             onClick={handleDrawerToggle}
           >
@@ -87,7 +90,7 @@ const Navbar = ({ window, links }) => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={-80}
+                offset={-112}
               >
                 <Button sx={{ color: "#000000", mx: 3, px: 2 }}>{item}</Button>
               </Link>

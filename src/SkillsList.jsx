@@ -1,13 +1,13 @@
 import React from "react";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
+import { Box, Grid, Paper } from "@mui/material";
 import skills from "./Skills";
 
 const SkillList = () => {
   return (
     <section id="Skills" className="SkillsList">
-      <Box sx={{ flexGrow: 1, margin: 3, mx: 15 }}>
+      <Box
+        sx={{ flexGrow: 1, margin: 3, mx: 15, marginTop: 20, paddingTop: 5 }}
+      >
         <header className="SkillsList-header">
           <h2
             style={{
@@ -57,7 +57,12 @@ const SkillList = () => {
                         <li
                           key={skill}
                           className="SkillsList-li"
-                          style={{ textAlign: "center", width: "100%" }}
+                          style={{
+                            textAlign: "center",
+                            width: "100%",
+                            paddingBottom: 3,
+                            paddingTop: 3,
+                          }}
                         >
                           {skill}
                         </li>
