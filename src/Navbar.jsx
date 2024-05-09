@@ -1,21 +1,20 @@
 import * as React from "react";
 import {
   AppBar,
-  Typography,
-  Divider,
   Box,
   CssBaseline,
+  Divider,
   Drawer,
   IconButton,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  MenuIcon,
   Toolbar,
+  Typography,
   Button,
 } from "@mui/material";
-
+import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-scroll";
 
 const drawerWidth = 240;
