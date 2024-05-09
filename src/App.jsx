@@ -9,9 +9,9 @@ import Box from "@mui/material/Box";
 function App() {
   return (
     <div className="App">
-      <header>
-        <Navbar links={["About Me", "Skills", "Projects", "Contact"]} />
-      </header>
+      <Box component="header">
+        <Navbar />
+      </Box>
       <Box component="main" sx={{ mt: 10 }}>
         <AboutMe />
         <SkillsList />

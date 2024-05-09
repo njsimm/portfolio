@@ -1,4 +1,5 @@
 import * as React from "react";
+import navbarLinks from "./NavbarLinks";
 import {
   AppBar,
   Box,
@@ -19,7 +20,7 @@ import { Link } from "react-scroll";
 
 const drawerWidth = 240;
 
-const Navbar = ({ window, links }) => {
+const Navbar = ({ window }) => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -33,23 +34,43 @@ const Navbar = ({ window, links }) => {
       </Typography>
       <Divider />
       <List>
-        {links.map((item) => (
-          <Link
-            to={item.replace(" ", "")}
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-45}
-            key={item}
-            onClick={handleDrawerToggle}
-          >
-            <ListItem disablePadding>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary={item} />
-              </ListItemButton>
-            </ListItem>
-          </Link>
-        ))}
+        {navbarLinks.map((link) => {
+          if (link.type === "internal") {
+            return (
+              <Link
+                key={link.name}
+                to={link.path}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-45}
+                onClick={handleDrawerToggle}
+              >
+                <ListItem disablePadding>
+                  <ListItemButton sx={{ textAlign: "center" }}>
+                    <ListItemText primary={link.name} />
+                  </ListItemButton>
+                </ListItem>
+              </Link>
+            );
+          } else {
+            return (
+              <a
+                key={link.name}
+                href={link.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <ListItem disablePadding>
+                  <ListItemButton sx={{ textAlign: "center" }}>
+                    <ListItemText primary={link.name} />
+                  </ListItemButton>
+                </ListItem>
+              </a>
+            );
+          }
+        })}
       </List>
     </Box>
   );
@@ -82,18 +103,38 @@ const Navbar = ({ window, links }) => {
               justifyContent: "center",
             }}
           >
-            {links.map((item) => (
-              <Link
-                key={item}
-                to={item.replace(" ", "")}
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-112}
-              >
-                <Button sx={{ color: "#000000", mx: 3, px: 2 }}>{item}</Button>
-              </Link>
-            ))}
+            {navbarLinks.map((link) => {
+              if (link.type === "internal") {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-112}
+                  >
+                    <Button sx={{ color: "#000000", px: 4 }}>
+                      {link.name}
+                    </Button>
+                  </Link>
+                );
+              } else {
+                return (
+                  <a
+                    key={link.name}
+                    href={link.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <Button sx={{ color: "#000000", px: 4 }}>
+                      {link.name}
+                    </Button>
+                  </a>
+                );
+              }
+            })}
           </Box>
         </Toolbar>
       </AppBar>
