@@ -1,6 +1,5 @@
 import React from "react";
-import { Typography, Link, Divider, Box, Grid, Paper } from "@mui/material";
-import "./ProjectsList.css";
+import { Typography, Button, Divider, Box, Grid, Paper } from "@mui/material";
 import projects from "./Projects";
 
 const ProjectsList = () => {
@@ -54,30 +53,35 @@ const ProjectsList = () => {
                       justifyContent: "space-around",
                     }}
                   >
-                    <Link
+                    <Button
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      underline="none"
+                      sx={{
+                        color: "#000000",
+                        "&:hover": {
+                          backgroundColor: "#f0f0f0",
+                          color: "#333",
+                        },
+                      }}
                     >
-                      <Typography color="primary" style={{ cursor: "pointer" }}>
-                        GitHub
-                      </Typography>
-                    </Link>
+                      GitHub
+                    </Button>
                     {project.liveLink && (
-                      <Link
+                      <Button
                         href={project.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        underline="none"
+                        sx={{
+                          color: "#000000",
+                          "&:hover": {
+                            backgroundColor: "#f0f0f0",
+                            color: "#333",
+                          },
+                        }}
                       >
-                        <Typography
-                          color="secondary"
-                          style={{ cursor: "pointer" }}
-                        >
-                          Live
-                        </Typography>
-                      </Link>
+                        Live
+                      </Button>
                     )}
                   </Box>
                 </Paper>
