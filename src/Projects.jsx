@@ -8,7 +8,7 @@ const projects = [
   {
     name: "MarketCap Metrics",
     description:
-      "MarketCap Metrics is designed to facilitate the comparison of market capitalization between different asset types.",
+      "I developed MarketCap Metrics to provide an easy and efficient solution for individuals seeking to calculate the percentage and multiple-fold differences between asset values. This web app specifically utilizes market capitalization data for comparisons.",
     image: mcmPic,
     skillsUsed: [
       "Python",
@@ -27,7 +27,7 @@ const projects = [
   {
     name: "Warbler",
     description:
-      "This project involves working on a somewhat-functioning Twitter clone called Warbler. This project showcases my ability to work with an existing codebase and improve it. The primary objective is to extend the application by fixing bugs, writing tests, and adding new features.",
+      "I worked on Warbler, a Twitter clone, focusing on enhancing the platform by fixing bugs, adding new features, and writing tests. This project demonstrates my skills in extending and refining existing codebases, as well as implementing industry-standard practices to improve functionality and reliability.",
     image: warblerPic,
     skillsUsed: [
       "Python",
@@ -43,7 +43,7 @@ const projects = [
   {
     name: "React Refactor: Class vs Functional Components",
     description:
-      "This project involves refactoring a React application from using class based components to using functional components. This project showcases my ability to update legacy code to use modern best practices.",
+      "This project required me to refactor a simple React application that fetches jokes from an API. I was tasked with transitioning it from class-based components to functional components using hooks. This work involved updating legacy code to align with modern React practices, demonstrating my capability to enhance and modernize existing applications.",
     image: refactorlPic,
     skillsUsed: ["React", "JavaScript", "Axios"],
     githubLink: "https://github.com/njsimm/refactoring-react-class-vs-function",
@@ -52,7 +52,7 @@ const projects = [
   {
     name: "React Magic Eightball",
     description:
-      "This is a simple React app that simulates a magic eightball. Ask it any questions you have! ",
+      "This is an interactive React application I developed, which allows users to ask questions and receive responses from a digital version of the classic toy, the Magic Eightball. Feel free to ask any questions you may have!",
     image: eightballPic,
     skillsUsed: ["React", "JavaScript", "HTML", "CSS"],
     githubLink: "https://github.com/njsimm/react-magic-eightball",
@@ -61,7 +61,7 @@ const projects = [
   {
     name: "My Portfolio Page",
     description:
-      "The website you are currently viewing! This project showcases my ability to create a responsive, modern website using React.",
+      "This website, which you are currently viewing, is a showcase of my skills in developing responsive, modern websites using React and Material-UI. Designed to highlight my projects and technical abilities, it demonstrates my proficiency in creating user-friendly, visually appealing interfaces.",
     image: portTwoPic,
 
     skillsUsed: ["React", "Material-UI", "JavaScript", "HTML", "CSS"],

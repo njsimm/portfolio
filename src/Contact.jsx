@@ -21,7 +21,7 @@ const Contact = () => {
       }}
     >
       <Box component="header" className="Contact-header">
-        <Typography component="h2" sx={{ textAlign: "center" }}>
+        <Typography component="h2" variant="h6" sx={{ textAlign: "center" }}>
           Contact
         </Typography>
       </Box>

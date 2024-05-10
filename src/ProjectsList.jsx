@@ -10,15 +10,15 @@ const ProjectsList = () => {
       className="ProjectsList"
       sx={{ flexGrow: 1, margin: 3, mx: 15, marginTop: 22, paddingTop: 5 }}
     >
-      <header className="ProjectsList-header">
-        <h2
-          style={{
-            textAlign: "center",
-          }}
+      <Box component="header" className="ProjectsList-header">
+        <Typography
+          component="h2"
+          variant="h4"
+          sx={{ textAlign: "center", marginBottom: 3 }}
         >
           Projects
-        </h2>
-      </header>
+        </Typography>
+      </Box>
 
       <Grid container spacing={5}>
         {projects.map((project) => (
@@ -36,7 +36,12 @@ const ProjectsList = () => {
                     borderRadius: "16px",
                   }}
                 >
-                  <Typography variant="h5">{project.name}</Typography>
+                  <Typography
+                    variant="h6"
+                    sx={{ marginBottom: 2, fontWeight: 500 }}
+                  >
+                    {project.name}
+                  </Typography>
 
                   {project.image && (
                     <img
@@ -109,14 +114,14 @@ const ProjectsList = () => {
                       component="div"
                       variant="subtitle1"
                       sx={{
-                        fontWeight: "bold",
+                        fontWeight: "medium",
                         textAlign: "center",
                         marginBottom: 0,
                       }}
                     >
                       <Divider> Skills Used</Divider>
                     </Typography>
-                    {project.skillsUsed.join(" | ")}
+                    {project.skillsUsed.join(" • ")}
                   </Typography>
                 </Box>
               </Grid>

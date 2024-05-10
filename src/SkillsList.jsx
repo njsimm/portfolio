@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Paper } from "@mui/material";
+import { Box, Grid, Paper, Typography, List, ListItem } from "@mui/material";
 import skills from "./Skills";
 
 const SkillList = () => {
@@ -10,15 +10,15 @@ const SkillList = () => {
       className="SkillsList"
       sx={{ flexGrow: 1, margin: 3, mx: 15, marginTop: 20, paddingTop: 5 }}
     >
-      <header className="SkillsList-header">
-        <h2
-          style={{
-            textAlign: "center",
-          }}
+      <Box component="header" className="SkillsList-header">
+        <Typography
+          component="h2"
+          variant="h4"
+          sx={{ textAlign: "center", marginBottom: 3 }}
         >
           Technical Skills
-        </h2>
-      </header>
+        </Typography>
+      </Box>
 
       <Grid container spacing={2} alignItems="stretch">
         {skills.map((skillObj) => {
@@ -35,19 +35,21 @@ const SkillList = () => {
                   alignItems: "center",
                 }}
               >
-                <h3
-                  className="SkillsList-type-header"
-                  style={{ marginBottom: 0 }}
+                <Typography
+                  component="h3"
+                  variant="h6"
+                  sx={{
+                    textAlign: "center",
+                    paddingTop: 1,
+                    fontWeight: "bold",
+                  }}
                 >
                   {skillObj.type}
-                </h3>
-
-                <ul
-                  className="SkillsList-ul"
-                  style={{
+                </Typography>
+                <List
+                  sx={{
                     width: "100%",
                     padding: 0,
-                    listStyle: "none",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -56,21 +58,26 @@ const SkillList = () => {
                 >
                   {skillObj.skills.map((skill) => {
                     return (
-                      <li
+                      <ListItem
                         key={skill}
                         className="SkillsList-li"
-                        style={{
+                        sx={{
                           textAlign: "center",
                           width: "100%",
-                          paddingBottom: 3,
-                          paddingTop: 3,
+                          paddingBottom: 0.5,
+                          justifyContent: "center",
                         }}
                       >
-                        {skill}
-                      </li>
+                        <Typography
+                          variant="body1"
+                          sx={{ textAlign: "center" }}
+                        >
+                          {skill}
+                        </Typography>
+                      </ListItem>
                     );
                   })}
-                </ul>
+                </List>
               </Paper>
             </Grid>
           );
