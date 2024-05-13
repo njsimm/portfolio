@@ -1,8 +1,19 @@
 import React from "react";
-import { Box, Typography, Grid, Button, IconButton } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Grid,
+  Button,
+  IconButton,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import contactInfo from "./ContactInfo";
 
 const Contact = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Box
       component="section"
@@ -11,7 +22,7 @@ const Contact = () => {
       sx={{
         flexGrow: 1,
         margin: 3,
-        mx: 15,
+        mx: isSmallScreen ? 3 : 15,
         marginTop: 5,
         display: "flex",
         flexDirection: "column",

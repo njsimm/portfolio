@@ -1,14 +1,24 @@
 import React from "react";
-import { Box, Grid, Typography, Divider } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  Divider,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import picture from "./assets/pic-port.png";
 
 const AboutMe = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Box
       component="section"
       id="AboutMe"
       className="AboutMe"
-      sx={{ flexGrow: 1, margin: 3, mx: 15, marginTop: 20 }}
+      sx={{ flexGrow: 1, margin: 3, mx: isSmallScreen ? 3 : 15, marginTop: 20 }}
     >
       <Grid container spacing={6}>
         <Grid item xs={12} sm={12} md={6} lg={4}>

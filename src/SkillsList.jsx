@@ -1,14 +1,32 @@
 import React from "react";
-import { Box, Grid, Paper, Typography, List, ListItem } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  List,
+  ListItem,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import skills from "./Skills";
 
 const SkillList = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Box
       component="section"
       id="Skills"
       className="SkillsList"
-      sx={{ flexGrow: 1, margin: 3, mx: 15, marginTop: 20, paddingTop: 5 }}
+      sx={{
+        flexGrow: 1,
+        margin: 3,
+        mx: isSmallScreen ? 3 : 15,
+        marginTop: 20,
+        paddingTop: 5,
+      }}
     >
       <Box component="header" className="SkillsList-header">
         <Typography

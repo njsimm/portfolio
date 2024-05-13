@@ -1,14 +1,32 @@
 import React from "react";
-import { Typography, Button, Divider, Box, Grid, Paper } from "@mui/material";
+import {
+  Typography,
+  Button,
+  Divider,
+  Box,
+  Grid,
+  Paper,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import projects from "./Projects";
 
 const ProjectsList = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <Box
       component="section"
       id="Projects"
       className="ProjectsList"
-      sx={{ flexGrow: 1, margin: 3, mx: 15, marginTop: 22, paddingTop: 5 }}
+      sx={{
+        flexGrow: 1,
+        margin: 3,
+        mx: isSmallScreen ? 3 : 15,
+        marginTop: 22,
+        paddingTop: 5,
+      }}
     >
       <Box component="header" className="ProjectsList-header">
         <Typography
