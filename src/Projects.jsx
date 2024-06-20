@@ -3,8 +3,30 @@ import warblerPic from "./assets/pic-warbler.png";
 import eightballPic from "./assets/pic-eightball.png";
 import refactorlPic from "./assets/pic-refactor.png";
 import portTwoPic from "./assets/pic-port-2.png";
+import yamPic from "./assets/pic-yam.png";
 
 const projects = [
+  {
+    name: "yam",
+    description:
+      "I created yam to help artists, vendors, handmade crafters, and small business owners keep track of their sales, products, inventory, and more. This is a full stack application deployed using Render and Supabase. Note: This app is using the free tier of Render and Supabase, so it may take a few seconds to load.",
+    image: yamPic,
+
+    skillsUsed: [
+      "React",
+      "Material-UI",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Git",
+      "Jest",
+      "Bcrypt",
+      "Axios",
+    ],
+    githubLink: "https://github.com/njsimm/yam",
+    liveLink: "https://yam-p2qp.onrender.com/",
+  },
   {
     name: "MarketCap Metrics",
     description:
@@ -65,8 +87,8 @@ const projects = [
     image: portTwoPic,
 
     skillsUsed: ["React", "Material-UI", "JavaScript", "HTML", "CSS"],
-    githubLink: "add when complete",
-    liveLink: "add when complete",
+    githubLink: "https://github.com/njsimm/portfolio",
+    liveLink: null,
   },
 ];
 
