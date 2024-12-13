@@ -1,12 +1,21 @@
 const skills = [
   {
     type: "Front-end",
-    skills: ["HTML", "CSS", "JavaScript", "React", "jQuery", "Bootstrap"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "jQuery",
+      "Bootstrap",
+    ],
   },
   {
     type: "Back-end",
     skills: [
       "Node.js",
+      "Nest.js",
       "Express.js",
       "Python",
       "Flask",
@@ -17,7 +26,7 @@ const skills = [
   },
   {
     type: "Tools",
-    skills: ["Bcrypt", "Git", "GitHub", "Axios", "Material-UI"],
+    skills: ["Supabase", "Bcrypt", "Git", "GitHub", "Axios", "Material-UI"],
   },
   {
     type: "Testing Frameworks",

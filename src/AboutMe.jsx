@@ -50,9 +50,9 @@ const AboutMe = () => {
           </Typography>
           <Divider />
           <Typography variant="body1" paragraph marginTop="1rem">
-            I am a full stack developer with experience using the JavaScript and
-            Python programming languages, RDBMSystems such as PostgreSQL, and
-            the technologies in their respective ecosystems.
+            I am a full stack developer with experience using the JavaScript,
+            TypeScript, and Python programming languages, RDBMSystems such as
+            PostgreSQL, and the technologies in their respective ecosystems.
           </Typography>
           <Typography variant="body1" paragraph>
             My time in software engineering has provided me with experience in
